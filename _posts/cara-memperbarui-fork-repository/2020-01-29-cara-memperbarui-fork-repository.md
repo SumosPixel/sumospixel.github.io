@@ -8,7 +8,7 @@ tag:
   - tips
   - git
   - software
-image: /repo.png
+image: /cara-memperbarui-fork-repository/repo.png
 ---
 
 Berawal dari saya pengen memperbarui repo yang tua dari suatu organisasi, niatnya pengen rumat ulang nih, ternyata dari orginal reponya ada update, sekalian buat artikel deh, lebih kurang gambaranya seperti ini.
@@ -21,6 +21,7 @@ Berawal dari saya pengen memperbarui repo yang tua dari suatu organisasi, niatny
 Ada dua cara untuk memperbarui forked repository menggunakan web interface yang disediakan oleh github tapi ribet, atau melalui terminal yang lebih ribet lagi.
 
 ### Melalui Github (boring way) 💻
+<img src="/assets/img/pixel_avatar.png" alt="ilustrasi repo yang mau diupdate">
 
 1. Buka repo yang hasil fork di Github.
 1. Klik **Pull Requests** di sebelah kanan, lalu **New Pull Request**.
