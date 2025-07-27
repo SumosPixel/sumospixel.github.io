@@ -1,97 +1,134 @@
-![](_assets/images/documentation/chalk-intro@2x.png)
+<div align="center">
+  <br>
+  <img src="/images/reverie-text.png" alt="Reverie" width="200"/>
+  <br>  
+  <p align="center">
+    <i>Support my work via <a href="https://paypal.me/AmitMerchant">Paypal</a></i>
+    •
+    <i>Would you be interested in <a href="https://www.producthunt.com/upcoming/reverie-pro">Reverie Pro</a>?</i>
+  </p>
+</div>
 
-Chalk is a high quality, completely customizable, performant and 100% free blog template for Jekyll.
+---
 
-## Overview
+Reverie is a [Jekyll](https://jekyllrb.com/)-powered theme which is simple and opinionated. It's actually a fork of [jekyll-now](https://github.com/barryclark/jekyll-now) with some additional features and personal touches which I've implemented to suit my needs for my blog.
 
-Features:
-  - About page.
-  - Automatic RSS feed.
-  - Automatic sitemap.
-  - Automatic time to read post indicator.
-  - Cross browser support (supports all modern browsers).
-  - Custom 404 page.
-  - Custom code highlighting.
-  - Customizable pagination.
-  - Dark and Light theme.
-  - Easy setup and deploying.
-  - Enlarge images on click.
-  - Filter on tags.
-  - Optional tag navigation.
-  - Frequently updated with new versions.
-  - Many social media links supported.
-  - Media embed for videos.
-  - PageSpeed optimized.
-  - Proper sharing links for posts on Facebook, Twitter and Google Plus.
-  - SEO optimized.
-  - Support for local fonts.
-  - Support for emoji's.
+> [Theme demo](https://reverie-jekyll.netlify.app/)
 
-Integrations
-  - [Disqus](https://disqus.com/)
-  - [Google Analytics](https://analytics.google.com/analytics/web/)
-  - [Google Fonts](https://fonts.google.com/)
-  - [SVG Icons](https://icomoon.io/)
+This is a plug-and-play Jekyll theme best suited to use on [GitHub Pages](https://pages.github.com) without even setting up a local environment.
 
-Used tools
-  - [Autoprefixer](https://github.com/postcss/autoprefixer)
-  - [Circle CI](https://circleci.com/)
-  - [Html-proofer](https://github.com/gjtorikian/html-proofer)
-  - [Jekyll](https://jekyllrb.com/)
-  - [Jekyll Assets](https://github.com/jekyll/jekyll-assets)
-  - [Jekyll Sitemap](https://github.com/jekyll/jekyll-sitemap)
-  - [HTML5 Boilerplate](https://html5boilerplate.com/) (Influenced by)
-  - [Kickster](https://kickster.nielsenramon.com/)
-  - [Retina.js](https://imulus.github.io/retinajs/)
-  - [STACSS](https://stacss.nielsenramon.com/)
-  - [Travis](https://travis-ci.org/)
-  - [Yarn](https://yarnpkg.com)
-  - [Zooming](https://github.com/kingdido999/zooming/)
+![](/images/reverie-demo.png)
 
-## Usage
+|  Responsiveness            |  Search | Categories |
+|---------------------|----------------------|----------------------|
+|![Responsiveness](/images/mobile-demo.png) | ![search](/images/search.png) | ![categories](/images/categories.png) |
 
-### Installation
+# Table of Contents
+  - [Features overview](#features-overview)
+  - [Using Reverie on GitHub Pages](#using-reverie-on-github-pages)
+    - [1. Fork Reverie to your User Repository](#1-fork-reverie-to-your-user-repository)
+    - [2. Customize and view your site](#2-customize-and-view-your-site)
+    - [3. Publish your first blog post](#3-publish-your-first-blog-post)
+  - [Using Categories in Reverie](#using-categories-in-reverie)
+  - [Pagination](#pagination)
+  - [RSS](#rss)
+  - [Sitemap](#sitemap)
+  - [Emailware](#emailware)
+  - [The name?](#the-name)
+  - [License](#license)
 
-If you haven't installed the following tools then go ahead and do so (make sure you have [Homebrew](https://brew.sh/) installed):
+## Features overview
 
-    brew install ruby
-    brew install npm
+- Clean and minimal design
+- Single column post layout
+- Command-line free fork-first workflow, using GitHub.com to create, customize and post to your blog
+- Fully responsive and mobile optimized theme
+- Sass/Coffeescript support using Jekyll 2.0
+- Free hosting on your GitHub Pages user site
+- All the SEO goodies come built-in
+- Markdown blogging
+- Supports [Pullquotes](https://reverie-jekyll.netlify.app/pullquotes/)
+- Syntax highlighting using Pygments
+    - [Dracula syntax theme](https://draculatheme.com/) included
+- Disqus commenting
+- Social media icons
+- Google Analytics integration
+- Supports [Google Analytics 4](https://support.google.com/analytics/answer/10089681?hl=en)
+- Fuzzy search across blog posts
+- Blog with pagination
+- Categorize posts out-of-the box
+- RSS Feed
+- Built-in sitemap
 
-On windows, install Ruby and Node with the installers found here:
+> <p><i>Like this theme?</i> If so, consider donating a small amount that will help my maintaining this project further.<p>
+> You can support me via <a href="https://paypal.me/AmitMerchant">Paypal</a>.
 
-  - [Ruby](https://rubyinstaller.org/)
-  - [Node.js](https://nodejs.org/en/download/)
+## Using Reverie on GitHub Pages
 
-Next setup your environment:
+Setting up Reverie on GitHub Pages is as simple as it gets!
 
-    npm run setup
+### 1. Fork Reverie to your User Repository
 
-### Development
+Fork this repository, then rename the repository to `yourgithubusername.github.io`.
 
-Run Jekyll:
+Alternatively, you can click the [`Use this template`](https://github.com/amitmerchant1990/reverie/generate) button if you want to create a repository with a clean commit history which will use Reverie as a template.
 
-    npm run local
+Your Jekyll blog will often be viewable immediately at <https://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2).
 
-## Deploy to GitHub Pages
+### 2. Customize and view your site
 
-Before you deploy, commit your changes to any working branch except the `gh-pages` one and run the following command:
+Enter your site name, description, avatar and many other options by editing the `_config.yml` file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here.
 
-    npm run publish
+Making a change to `_config.yml` (or any file in your repository) will force GitHub Pages to rebuild your site with Jekyll. Your rebuilt site will be viewable a few seconds later at <https://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon.
 
-**Important note**: Chalk does not support the standard way of Jekyll hosting on GitHub Pages. You need to deploy your working branch (can be any branch, for xxx.github.io users: use another branch than `master`) with the `npm run publish` command. Reason for this is because Chalk uses Jekyll plugins that aren't supported by GitHub pages. The `npm run publish` command will automatically build the entire project, then push it to the `gh-pages` branch of your repo. The script creates that branch for you so no need to create it yourself. Also, if you are developing a **project site**, you must set the `baseurl` in `_config.yml` to the name of your repository.
+### 3. Publish your first blog post
 
-You can find more info on how to use the `gh-pages` branch and a custom domain [here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
+Delete all files from `_posts`directory and create a new file called `/_posts/2019-2-13-Hello-World.md` to publish your first blog post. That's all you need to do to publish your first blog post! This [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) might come in handy while writing the posts.
 
-[View this](https://github.com/nielsenramon/kickster#automated-deployment-with-circle-ci) for more info about automated deployment with Circle CI.
+> You can add additional posts in the browser on GitHub.com too! Just hit the <kbd>Create new file</kbd> button in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
+
+## Using Categories in Reverie
+
+You can categorize your content based on `categories` in Reverie. For this, you just need to add `categories` in front matter like below:
+
+For adding single category:
+
+```md
+categories: JavaScript
+```
+
+For adding multiple categories:
+
+```md
+categories: [PHP, Laravel]
+```
+
+The categorized content can be shown over this URL: <https://yourgithubusername.github.io/categories/>
+
+## Pagination
+
+Pagination of posts in Reverie works out-of-the-box. You only need to specify the number of posts you want on a single page in `_config.yml` and Reverie will take care of the rest.
+
+```yml
+paginate: 6
+```
+
+## RSS
+
+Reverie comes with a [RSS feed](https://en.wikipedia.org/wiki/RSS) in-built. The generated RSS Feed of your blog can be found at <https://yourgithubusername.github.io/feed>. You can see the example RSS feed over [here](https://reverie-jekyll.netlify.app/feed.xml).
+
+## Sitemap
+
+The generated sitemap of your blog can be found at <https://yourgithubusername.github.io/sitemap>. You can see the example sitemap feed over [here](https://reverie-jekyll.netlify.app/sitemap).
+
+## Emailware
+Reverie is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this theme or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
+
+## The name?
+
+reverie - _a state of being pleasantly lost in one's thoughts; a daydream._<br><sup>/ˈrɛv(ə)ri/</sup> 
+
 
 ## License
 
-MIT License
-
-## Contributing
-
-1. Fork it (https://github.com/[my-github-username]/chalk/fork)
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+MIT
