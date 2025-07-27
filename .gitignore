@@ -1,6 +1,5 @@
-# Ruby Gems
+.bundle
+.sass-cache
+Gemfile.lock
+_site
 *.gem
-
-# Design Files
-*.psd
-*.ai
